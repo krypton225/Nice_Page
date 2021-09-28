@@ -1,0 +1,268 @@
+/* 
+    * This project is created by Khaled Mohamed.
+    * It is started in 18-Sep-2021.
+    * This project is ONLY made by using HTML4 and CSS3 (For only training).
+
+    ***********************************************************************************
+
+    * This is a CSS style file, and we indexed the file to facilitate the moving in it.
+
+    ************************************* INDEX *************************************
+        1- Commen styles.
+        2- Navbar.
+        3- First 2 divs (demo app and clean).
+            3.1- get demo div.
+            3.2- clean-code div.
+        4- items-container div.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  width: 95%;
+  height: 50px;
+  /* background-color: rgb(69, 108, 160); */
+  margin: auto;
+}
+
+.clear {
+  clear: both;
+}
+
+h3 {
+  font-size: 1.875rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-weight: 400;
+}
+
+/* ************************************************************************************************ */
+
+.navbar {
+  background-color: #0084ff;
+  height: 77px;
+  /* position: relative; */
+}
+
+.navbar .container .logo-img {
+  margin-top: 18px;
+  margin-left: 2.5%;
+  float: left;
+}
+
+.navbar .container .hamburger {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  display: block;
+  left: 96%;
+  top: 25%;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.navbar .container .hamburger > span {
+  display: block;
+  position: absolute;
+  width: 33px;
+  height: 3px;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+
+.navbar .container .hamburger .f-span {
+  margin-top: 20px;
+}
+
+.navbar .container .hamburger .th-span {
+  margin-top: 10px;
+}
+
+/* ************************************************************************************************ */
+
+.demo-clean {
+  margin-top: 60px;
+}
+
+.demo-clean > div {
+  border-radius: 20px;
+  margin: 20px;
+  padding: 35px;
+  position: relative;
+}
+
+.get-demo {
+  width: 60%;
+  height: 420px;
+  background-color: #b7ddff;
+  float: left;
+}
+
+.get-demo > div {
+  width: 50%;
+  position: absolute;
+}
+
+.get-demo .left-one {
+  float: left;
+}
+
+.get-demo .left-one h3 {
+  color: #0084ff;
+}
+
+.get-demo .left-one p {
+  color: #3279bb;
+  font-size: 18px;
+  margin-right: 90px;
+  line-height: 1.6;
+}
+
+.get-demo .left-one .btn-apple {
+  height: 50px;
+  width: 240px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 30px;
+  background-color: #0084ff;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.get-demo .left-one .btn-apple:hover {
+  cursor: pointer;
+  color: #0084ff;
+  background-color: #fff;
+}
+
+.get-demo .right-one {
+  float: left;
+}
+
+.get-demo .right-one {
+  display: block;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 0;
+}
+
+.get-demo .right-one img {
+  width: 280px;
+  height: 320px;
+}
+
+/* ************************************************************************************************ */
+
+.clean-code {
+  width: 30%;
+  height: 420px;
+  background-color: #caefda;
+  float: left;
+  text-align: center;
+}
+
+.clean-code img {
+  height: 100px;
+  color: #caefda;
+}
+
+.clean-code h3 {
+  color: #54c788;
+  margin-top: 25px;
+}
+
+.clean-code p {
+  color: #529671;
+  font-size: 18px;
+  margin-right: 15px;
+  line-height: 1.6;
+}
+
+/* ************************************************************************************************ */
+
+.items-container {
+  height: 420px;
+  width: 100%;
+  /* background-color: #54c788; */
+  position: relative;
+  margin-top: 45%;
+  padding: 15px;
+}
+
+.items-container .item-content {
+  width: 31%;
+  float: left;
+  height: inherit;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 10px;
+}
+
+.items-container .item-content > img {
+  width: 90px;
+  height: 90px;
+  margin-top: 15%;
+}
+
+.items-container .item-content.web-item {
+  background-color: #ffd2d2;
+}
+
+.items-container .item-content.web-item h3 {
+  color: #ff8a8a;
+}
+
+.items-container .item-content.web-item p {
+  color: #9e5d5d;
+}
+
+.items-container .item-content.development-item {
+  background-color: #ffe7c4;
+}
+
+.items-container .item-content.development-item h3 {
+  color: #ffc166;
+}
+
+.items-container .item-content.development-item p {
+  color: #a68454;
+}
+
+.items-container .item-content.brand-item {
+  background-color: #d5d3f5;
+}
+
+.items-container .item-content.brand-item h3 {
+  color: #9693e6;
+}
+
+.items-container .item-content.brand-item p {
+  color: #676597;
+}
+
+.items-container .item-content.web-item h3,
+.items-container .item-content.development-item h3,
+.items-container .item-content.brand-item h3 {
+  text-transform: capitalize;
+  margin-top: 10%;
+}
+
+.items-container .item-content.web-item p,
+.items-container .item-content.development-item p,
+.items-container .item-content.brand-item p {
+  padding: 0 33px;
+  font-weight: bold;
+  line-height: 1.6;
+}
